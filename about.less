@@ -26,9 +26,13 @@ clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
 .card{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 20px 0;
     border-bottom: 1px solid @font-secondary;
+
+    @media(@phone){
+        flex-direction: column
+    }
 
     &__image{
         width: 15%;
@@ -40,8 +44,8 @@ clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     }
 
     &__text-container{
-font-size: 4rem;
-text-decoration: none;
+        font-size: 4rem;
+        text-decoration: none;
         &--small{
             color: @font-secondary;
             font-size: 2rem;
