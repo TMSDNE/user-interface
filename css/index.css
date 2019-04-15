@@ -130,33 +130,52 @@ img {
   font-size: 8rem;
   color: #FFFFFF;
 }
-.people {
+
+.cards {
   margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.card {
+@media (max-width: 500px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+.cards .card {
+
   display: flex;
   flex-direction: column;
   padding: 20px 0;
   border-bottom: 1px solid #999;
+
+  width: 30%;
+  margin-right: 30px;
 }
-.card__image {
-  width: 15%;
+@media (max-width: 500px) {
+  .cards .card {
+    width: 100%;
+  }
 }
-.card__image img {
+.cards .card__image {
+  width: 20%;
+}
+.cards .card__image img {
   border-radius: 100px;
 }
-.card__text-container {
-  font-size: 4rem;
+.cards .card__text-container {
+  font-size: 3rem;
   text-decoration: none;
 }
-.card__text-container--small {
+.cards .card__text-container--small {
   color: #999;
   font-size: 2rem;
 }
-.card i {
+.cards .card i {
   color: #222;
   margin-left: 10px;
 }
-.card i:hover {
+.cards .card i:hover {
+
   color: #999;
 }
