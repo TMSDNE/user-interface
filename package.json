@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "less": "^3.9.0"
+  },
+  "devDependencies": {
+    "less-watch-compiler": "^1.13.0"
   }
 }
