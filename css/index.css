@@ -91,14 +91,12 @@ img {
 .main-header {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red ;
   padding: 1rem;
 }
 .main-header__nav {
   display: inline-flex;
   justify-content: flex-end;
   flex-basis: 33%;
-  border: 1px solid black;
 }
 .main-header__a {
   padding: 1rem 1.5rem;
@@ -111,11 +109,54 @@ img {
 }
 .main-header__img {
   flex-basis: 33%;
-  border: 1px solid black;
 }
 .cta__h2 {
   color: #222;
 }
 .features__h2 {
   color: #222;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(hsla(0, 0%, 68%, 0.603), hsla(0, 0%, 57%, 0.918)), url(/assests/images/stock.jpg);
+  background-size: 100% 100%;
+  height: 50vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.hero__tag-line {
+  letter-spacing: 4px;
+  margin-top: 80px;
+  font-size: 8rem;
+  color: #FFFFFF;
+}
+.people {
+  margin-top: 40px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-bottom: 1px solid #999;
+}
+.card__image {
+  width: 15%;
+}
+.card__image img {
+  border-radius: 100px;
+}
+.card__text-container {
+  font-size: 4rem;
+  text-decoration: none;
+}
+.card__text-container--small {
+  color: #999;
+  font-size: 2rem;
+}
+.card i {
+  color: #222;
+  margin-left: 10px;
+}
+.card i:hover {
+  color: #999;
 }
