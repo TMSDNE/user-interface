@@ -88,3 +88,28 @@ img {
 .content-margin {
   margin: 0 2.8rem;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red ;
+  padding: 1rem;
+}
+.header__nav {
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-basis: 33%;
+  border: 1px solid black;
+}
+.header__a {
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+.header__a:hover,
+.header__a:visited {
+  color: #222;
+}
+.header__img {
+  flex-basis: 33%;
+  border: 1px solid black;
+}
