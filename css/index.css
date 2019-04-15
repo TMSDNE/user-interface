@@ -91,14 +91,12 @@ img {
 .main-header {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red ;
   padding: 1rem;
 }
 .main-header__nav {
   display: inline-flex;
   justify-content: flex-end;
   flex-basis: 33%;
-  border: 1px solid black;
 }
 .main-header__a {
   padding: 1rem 1.5rem;
@@ -111,7 +109,6 @@ img {
 }
 .main-header__img {
   flex-basis: 33%;
-  border: 1px solid black;
 }
 .cta__h2 {
   color: #222;
@@ -133,6 +130,7 @@ img {
   font-size: 8rem;
   color: #FFFFFF;
 }
+
 .cards {
   margin-top: 40px;
   display: flex;
@@ -145,10 +143,12 @@ img {
   }
 }
 .cards .card {
+
   display: flex;
   flex-direction: column;
   padding: 20px 0;
   border-bottom: 1px solid #999;
+
   width: 30%;
   margin-right: 30px;
 }
@@ -176,5 +176,6 @@ img {
   margin-left: 10px;
 }
 .cards .card i:hover {
+
   color: #999;
 }
