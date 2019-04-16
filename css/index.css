@@ -163,6 +163,30 @@ img {
   padding-top: 3px;
   font-size: 4rem;
 }
+.button-basic {
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: none;
+  color: #FFFFFF;
+  border: 2px solid white;
+  transition: all 0.2s;
+}
+.button-basic:hover {
+  transform: scale(1.1);
+}
+.features-cards {
+  display: flex;
+  flex-basis: 30%;
+  margin-top: 40px;
+}
+.features-card {
+  text-align: center;
+  margin: 30px;
+}
+.features-card i {
+  font-size: 4rem;
+}
 .cards {
   margin-top: 40px;
   display: flex;
@@ -211,6 +235,7 @@ img {
   font-size: 2rem;
 }
 .card__img {
+  width: 60px;
   border-radius: 100px;
 }
 .accordion {
