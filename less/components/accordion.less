@@ -1,0 +1,38 @@
+
+    .accordion{
+        color:black;
+        height: 120px;
+        overflow: hidden;
+        border-bottom: 1px solid @font-secondary;
+        transition: all .2s;
+        margin-bottom: 10px;
+
+        
+
+        &__question{
+            height:100px;
+            overflow:hidden;
+            display: flex;
+            justify-content: space-between;
+           
+
+            @media(max-width: 500px){
+             margin: 0 10px;
+            }
+            
+
+            i{
+                font-size: 3rem;
+                margin-top: 35px;
+                color: @font-secondary;
+                
+                &:hover{
+                    color: @font-color;
+                }
+            }
+        }
+
+        &__show{
+            height: 300px;
+        }
+    }

@@ -144,7 +144,7 @@ img {
   }
 }
 .cards .card__image {
-  width: 20%;
+  width: 70px;
 }
 .cards .card__image img {
   border-radius: 100px;
@@ -167,9 +167,9 @@ img {
 .hero {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(hsla(0, 0%, 68%, 0.603), hsla(0, 2%, 89%, 0.918)), url(/assests/images/stock.jpg);
+  background-image: linear-gradient(hsla(0, 0%, 68%, 0.603), hsla(103, 65%, 44%, 0.918)), url(/assests/images/stock.jpg);
   background-size: 100% 100%;
-  height: 50vh;
+  height: 400px;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 .hero__tag-line {
@@ -178,12 +178,16 @@ img {
   font-size: 8rem;
   color: #FFFFFF;
 }
+.hero--alternative {
+  background-image: linear-gradient(hsla(0, 0%, 68%, 0.603), hsla(103, 65%, 44%, 0.918)), url(/assests/images/computer.jpg);
+}
 .footer {
   display: flex;
   justify-content: space-around;
   color: #FFFFFF;
   background-color: #222;
   margin-top: 50px;
+  position: sticky;
 }
 .footer__contact {
   font-size: 1.5rem;
@@ -191,4 +195,34 @@ img {
 .footer__social-media {
   padding-top: 3px;
   font-size: 4rem;
+}
+.accordion {
+  color: black;
+  height: 120px;
+  overflow: hidden;
+  border-bottom: 1px solid #999;
+  transition: all 0.2s;
+  margin-bottom: 10px;
+}
+.accordion__question {
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .accordion__question {
+    margin: 0 10px;
+  }
+}
+.accordion__question i {
+  font-size: 3rem;
+  margin-top: 35px;
+  color: #999;
+}
+.accordion__question i:hover {
+  color: #222;
+}
+.accordion__show {
+  height: 300px;
 }
