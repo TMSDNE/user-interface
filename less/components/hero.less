@@ -4,10 +4,10 @@
     justify-content: center;
     background-image: linear-gradient(
         hsla(0, 0%, 68%, 0.603),
-        hsla(0, 2%, 89%, 0.918)
+        hsla(103, 65%, 44%, 0.918)
       ),url(/assests/images/stock.jpg);
     background-size: 100% 100%;
-    height: 50vh;
+    height: 400px;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     
         &__tag-line{
@@ -15,5 +15,13 @@
             margin-top: 80px;
             font-size: 8rem;
             color: @white
+        }
+
+        &--alternative{
+            background-image: linear-gradient(
+                hsla(0, 0%, 68%, 0.603),
+                hsla(103, 65%, 44%, 0.918)
+              ),url(/assests/images/computer.jpg);
+
         }
     }
