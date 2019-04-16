@@ -271,6 +271,9 @@ img {
 .button-basic:hover {
   transform: scale(1.1);
 }
+.carousel__p {
+  color: #222;
+}
 .accordion {
   color: black;
   height: 120px;
