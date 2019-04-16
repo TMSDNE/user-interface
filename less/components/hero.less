@@ -1,6 +1,7 @@
 .hero {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-image: linear-gradient(
         hsla(0, 0%, 68%, 0.603),
         hsla(103, 65%, 44%, 0.918)
@@ -15,7 +16,22 @@
                 letter-spacing: 4px;
                 margin-top: 12rem;
                 font-size: 8rem;
-                color: @white
+                color: @white;
+            }
+        }
+
+        &__p {
+            &.subtitle {
+                color: @white;
+            }
+        }
+
+        &__a {
+            & > *:hover {
+                transform: scale(1.15);
+                color: @shark;
+                cursor: pointer;
+                transition: transform ease-in-out .5s;
             }
         }
 

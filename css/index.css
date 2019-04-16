@@ -121,6 +121,33 @@ img {
 .features__h2 {
   color: #222;
 }
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(hsla(0, 0%, 68%, 0.603), hsla(103, 65%, 44%, 0.918)), url(/assests/images/stock.jpg);
+  background-size: 100% 100%;
+  height: 400px;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.hero__h1.tag-line {
+  letter-spacing: 4px;
+  margin-top: 12rem;
+  font-size: 8rem;
+  color: #FFFFFF;
+}
+.hero__p.subtitle {
+  color: #FFFFFF;
+}
+.hero__a > *:hover {
+  transform: scale(1.15);
+  color: #222;
+  cursor: pointer;
+  transition: transform ease-in-out 0.5s;
+}
+.hero--alternative {
+  background-image: linear-gradient(hsla(0, 0%, 68%, 0.603), hsla(103, 65%, 44%, 0.918)), url(/assests/images/computer.jpg);
+}
 .footer {
   display: flex;
   justify-content: space-around;
@@ -185,23 +212,6 @@ img {
 }
 .card__img {
   border-radius: 100px;
-}
-.hero {
-  display: flex;
-  justify-content: center;
-  background-image: linear-gradient(hsla(0, 0%, 68%, 0.603), hsla(103, 65%, 44%, 0.918)), url(/assests/images/stock.jpg);
-  background-size: 100% 100%;
-  height: 400px;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-}
-.hero__h1.tag-line {
-  letter-spacing: 4px;
-  margin-top: 12rem;
-  font-size: 8rem;
-  color: #FFFFFF;
-}
-.hero--alternative {
-  background-image: linear-gradient(hsla(0, 0%, 68%, 0.603), hsla(103, 65%, 44%, 0.918)), url(/assests/images/computer.jpg);
 }
 .accordion {
   color: black;
