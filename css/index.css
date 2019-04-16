@@ -290,6 +290,9 @@ img {
   color: red;
   font-size: 10rem;
 }
+.carousel__span.arrow:hover {
+  cursor: pointer;
+}
 .carousel__span#arrowLeft {
   left: 25px;
 }
