@@ -118,8 +118,77 @@ img {
 .cta__h2 {
   color: #222;
 }
-.features__h2 {
+.cards {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 920px) {
+  .cards {
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+.cards--features {
+  display: flex;
+  flex-basis: 30%;
+  margin-top: 40px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-bottom: 1px solid #999;
+  flex-basis: 30%;
+  margin-right: 30px;
+}
+@media (max-width: 500px) {
+  .card {
+    flex-basis: 100%;
+  }
+}
+.card__i {
   color: #222;
+  margin-left: 10px;
+}
+.card__i:hover {
+  color: #999;
+}
+.card__div.text-container,
+.card__span.text-container {
+  font-size: 3rem;
+  text-decoration: none;
+}
+.card__div.text-container--small,
+.card__span.text-container--small {
+  color: #999;
+  font-size: 2rem;
+}
+.card__img {
+  width: 60px;
+  border-radius: 100px;
+}
+.card--features {
+  text-align: center;
+  margin: 30px;
+}
+.card--features__h1,
+.card--features__h2,
+.card--features__h3,
+.card--features__h4,
+.card--features__h5,
+.card--features__h6,
+.card--features__p {
+  color: #222;
+}
+.card--features__i {
+  font-size: 4rem;
 }
 .hero {
   display: flex;
@@ -174,69 +243,6 @@ img {
 }
 .button-basic:hover {
   transform: scale(1.1);
-}
-.features-cards {
-  display: flex;
-  flex-basis: 30%;
-  margin-top: 40px;
-}
-.features-card {
-  text-align: center;
-  margin: 30px;
-}
-.features-card i {
-  font-size: 4rem;
-}
-.cards {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-@media (max-width: 920px) {
-  .cards {
-    justify-content: center;
-  }
-}
-@media (max-width: 500px) {
-  .cards {
-    flex-direction: column;
-  }
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 0;
-  border-bottom: 1px solid #999;
-  flex-basis: 30%;
-  margin-right: 30px;
-}
-@media (max-width: 500px) {
-  .card {
-    flex-basis: 100%;
-  }
-}
-.card__i {
-  color: #222;
-  margin-left: 10px;
-}
-.card__i:hover {
-  color: #999;
-}
-.card__div.text-container,
-.card__span.text-container {
-  font-size: 3rem;
-  text-decoration: none;
-}
-.card__div.text-container--small,
-.card__span.text-container--small {
-  color: #999;
-  font-size: 2rem;
-}
-.card__img {
-  width: 60px;
-  border-radius: 100px;
 }
 .accordion {
   color: black;

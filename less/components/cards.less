@@ -12,6 +12,13 @@
     @media @phone {
         flex-direction: column;
     }
+
+
+    &--features {
+        display:flex;
+        flex-basis: 30%;
+        margin-top: 40px;
+    }
 }
 
 .card {
@@ -53,5 +60,18 @@
     &__img{
         width: 60px;
         border-radius: 100px;
+    }
+
+    &--features {
+        text-align: center;
+        margin: 30px; 
+
+        &__h1, &__h2, &__h3, &__h4, &__h5, &__h6, &__p {
+            color: @shark;
+        }
+
+        &__i {
+            font-size: 4rem;
+        }
     }
 }
