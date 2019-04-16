@@ -113,12 +113,28 @@ img {
 .features__h2 {
   color: #222;
 }
+.footer {
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+  background-color: #222;
+  margin-top: 50px;
+  position: sticky;
+}
+.footer__div.contact {
+  font-size: 1.5rem;
+}
+.footer__div.social-media {
+  padding-top: 3px;
+  font-size: 4rem;
+}
 .cards {
   margin-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: 2px solid purple;
 }
 @media (max-width: 920px) {
   .cards {
@@ -130,39 +146,39 @@ img {
     flex-direction: column;
   }
 }
-.cards .card {
+.card {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
   border-bottom: 1px solid #999;
   flex-basis: 30%;
   margin-right: 30px;
+  border: 1px solid orange;
 }
 @media (max-width: 500px) {
-  .cards .card {
+  .card {
     flex-basis: 100%;
   }
 }
-.cards .card__image {
-  width: 70px;
-}
-.cards .card__image img {
-  border-radius: 100px;
-}
-.cards .card__text-container {
-  font-size: 3rem;
-  text-decoration: none;
-}
-.cards .card__text-container--small {
-  color: #999;
-  font-size: 2rem;
-}
-.cards .card i {
+.card__i {
   color: #222;
   margin-left: 10px;
 }
-.cards .card i:hover {
+.card__i:hover {
   color: #999;
+}
+.card__div.text-container,
+.card__span.text-container {
+  font-size: 3rem;
+  text-decoration: none;
+}
+.card__div.text-container--small,
+.card__span.text-container--small {
+  color: #999;
+  font-size: 2rem;
+}
+.card__img {
+  border-radius: 100px;
 }
 .hero {
   display: flex;
@@ -172,29 +188,14 @@ img {
   height: 400px;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
-.hero__tag-line {
+.hero__h1.tag-line {
   letter-spacing: 4px;
-  margin-top: 80px;
+  margin-top: 12rem;
   font-size: 8rem;
   color: #FFFFFF;
 }
 .hero--alternative {
   background-image: linear-gradient(hsla(0, 0%, 68%, 0.603), hsla(103, 65%, 44%, 0.918)), url(/assests/images/computer.jpg);
-}
-.footer {
-  display: flex;
-  justify-content: space-around;
-  color: #FFFFFF;
-  background-color: #222;
-  margin-top: 50px;
-  position: sticky;
-}
-.footer__contact {
-  font-size: 1.5rem;
-}
-.footer__social-media {
-  padding-top: 3px;
-  font-size: 4rem;
 }
 .accordion {
   color: black;
