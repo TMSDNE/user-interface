@@ -134,7 +134,6 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 2px solid purple;
 }
 @media (max-width: 920px) {
   .cards {
@@ -153,7 +152,6 @@ img {
   border-bottom: 1px solid #999;
   flex-basis: 30%;
   margin-right: 30px;
-  border: 1px solid orange;
 }
 @media (max-width: 500px) {
   .card {
