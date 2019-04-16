@@ -107,6 +107,7 @@ img {
 }
 .main-header__a:hover {
   color: #222;
+  border-bottom: 1px solid #50b927ea;
 }
 .main-header__a--strikethrough {
   padding: 1rem 1.5rem;
