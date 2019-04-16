@@ -175,8 +175,12 @@ img {
   border-radius: 100px;
 }
 .card--features {
-  text-align: center;
-  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px double rgba(10, 10, 10, 0.1);
+  box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.2);
+  padding: 2rem;
 }
 .card--features__h1,
 .card--features__h2,
@@ -186,6 +190,8 @@ img {
 .card--features__h6,
 .card--features__p {
   color: #222;
+  margin: 0;
+  padding: 0.5rem 1rem;
 }
 .card--features__i {
   font-size: 4rem;
