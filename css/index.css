@@ -109,6 +109,15 @@ img {
   color: #222;
   border-bottom: 1px solid #50b927ea;
 }
+.main-header__a--logo {
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #999;
+}
+.main-header__a--logo:hover {
+  border: none;
+}
 .main-header__a--strikethrough {
   padding: 1rem 1.5rem;
   text-decoration: none;
