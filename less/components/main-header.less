@@ -11,15 +11,19 @@
     }
 
     &__a {
-        padding: 1rem 1.5rem;
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: @font-secondary;
+        .nav-item();
 
-            &:hover {
-                color: @shark;
-            }
+        &:hover {
+            color: @shark;
+        }
+
+        &--strikethrough {
+            .nav-item();
+            text-decoration: line-through;
+        }
+        
     }
+
 
     &__img {
         // flex-basis: 33%;
