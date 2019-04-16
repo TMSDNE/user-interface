@@ -63,11 +63,17 @@
     }
 
     &--features {
-        text-align: center;
-        margin: 30px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-left: 1px double rgba(10,10,10,0.1);
+        box-shadow: 2px 2px 3px rgba(50,50,50,0.2);
+        padding: 2rem;
 
         &__h1, &__h2, &__h3, &__h4, &__h5, &__h6, &__p {
             color: @shark;
+            margin: 0;
+            padding: .5rem 1rem;
         }
 
         &__i {
