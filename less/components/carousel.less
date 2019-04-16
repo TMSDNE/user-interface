@@ -1,5 +1,36 @@
 .carousel {
+    max-width: 600px;
+    margin: 5rem auto 0;
+    position: relative;
+
     &__p {
         color: @shark;
+    }
+
+    &__img {
+        box-shadow: 1px 2px 3px rgba(25,25,25,.8);
+    }
+
+    &__span {
+        &.arrow {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 40%;
+            color: red;
+            font-size: 10rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &#arrowLeft {
+            left: 25px;
+        }
+
+        &#arrowRight {
+            right: 25px;
+        }
     }
 }
