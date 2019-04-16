@@ -116,6 +116,15 @@ img {
   color: #999;
   text-decoration: line-through;
 }
+.main-header--logo {
+  font-size: 3rem;
+  font-family: 'Staatliches', cursive;
+  color: #222;
+  letter-spacing: 3px;
+  background: -webkit-linear-gradient(#50b927ea, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .cta__h2 {
   color: #222;
 }
@@ -170,6 +179,8 @@ img {
 .card__span.text-container--small {
   color: #999;
   font-size: 2rem;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 2px;
 }
 .card__img {
   width: 60px;
