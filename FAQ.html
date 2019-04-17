@@ -18,7 +18,10 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   </head>
+
+
   <body>
     <div class="container">
       <header class="main-header">
@@ -32,7 +35,7 @@
           <a href="about.html" class="main-header__a">About</a>
           <a href="FAQ.html" class="main-header__a">FAQ</a>
           <a href="index.html" class="main-header__a">Home</a>
-          <a href="about.html#contact" class="main-header__a--strikethrough"></a>
+          <a href="about.html#contact" class="main-header__a--strikethrough">Try It</a>
         </nav>
       </header>
 
@@ -95,5 +98,7 @@
     </div>
   </body>
 
-  <script type="text/javascript" src="./scripts/index.js"></script>
+  <!-- <script type="module" src="/scripts/components/accordion.js"></script> -->
+  <!-- <script type="module" src="/scripts/index.js"></script> -->
+  <script nomodule src="/scripts/fallback.js"></script>
 </html>
