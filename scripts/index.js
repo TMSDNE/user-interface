@@ -30,7 +30,6 @@ class Accordion{
 
 
 
-
 const accordion = document.querySelectorAll('.accordion')
 
 accordion.forEach((menu)=>{

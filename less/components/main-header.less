@@ -3,16 +3,31 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
+   
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: @white;
+  
+   
+    @media @phone {
+        flex-direction: column;
+        text-align:center;
+    }
 
     &__nav {
         display: inline-flex;
         justify-content: flex-end;
         flex-basis: 33%;
+        
+    
+
+      
     }
 
     &__a {
         .nav-item();
-
+        border-bottom: 2px transparent @accent-color;
         &:hover {
             color: @shark;
             border-bottom: 1px solid @accent-color

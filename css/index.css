@@ -84,6 +84,7 @@ img {
 .container {
   max-width: 1000px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 .content-margin {
@@ -94,6 +95,16 @@ img {
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+@media (max-width: 520px) {
+  .main-header {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .main-header__nav {
   display: inline-flex;
@@ -105,6 +116,7 @@ img {
   text-decoration: none;
   font-size: 1.5rem;
   color: #999;
+  border-bottom: 2px transparent #50b927ea;
 }
 .main-header__a:hover {
   color: #222;
@@ -151,25 +163,28 @@ img {
     justify-content: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .cards {
     flex-direction: column;
   }
 }
 .cards--features {
   display: flex;
-  flex-basis: 30%;
   margin-top: 40px;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .card {
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 20px 10px;
+  margin: 20px 0;
   border-bottom: 1px solid #999;
   flex-basis: 30%;
   margin-right: 30px;
+  box-shadow: 1px 2px 3px rgba(50, 50, 50, 0.2);
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .card {
     flex-basis: 100%;
   }
@@ -223,10 +238,14 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(hsla(0, 0%, 68%, 0.603), hsla(103, 65%, 44%, 0.918)), url(/assests/images/stock.jpg);
+  background-image: linear-gradient(hsla(0, 0%, 68%, 0.863), hsla(103, 65%, 44%, 0.918)), url(/assests/images/stock.jpg);
   background-size: 100% 100%;
   height: 400px;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 10% 100%);
+}
+.hero p {
+  font-size: 2rem;
+  font-weight: 700;
 }
 .hero__h1.tag-line {
   letter-spacing: 2px;
@@ -248,8 +267,16 @@ img {
   text-align: center;
   margin-top: 8rem;
 }
+@media (max-width: 520px) {
+  .hero .hero__heading {
+    margin-top: 0rem;
+  }
+}
 .hero--alternative {
-  background-image: linear-gradient(hsla(0, 0%, 68%, 0.603), hsla(103, 65%, 44%, 0.918)), url(/assests/images/computer.jpg);
+  background-image: linear-gradient(hsla(92, 42%, 33%, 0.561), hsla(103, 65%, 44%, 0.918)), url(/assests/images/airport-bank-board-534216.jpg);
+  background-size: 100% 100%;
+  height: 400px;
+  background-attachment: fixed;
 }
 .footer {
   display: flex;
@@ -278,6 +305,7 @@ img {
 .button-basic:hover {
   transform: scale(1.1);
 }
+
 .carousel {
   max-width: 600px;
   margin: 5rem auto 0;
@@ -294,7 +322,9 @@ img {
   width: 50px;
   height: 50px;
   top: 40%;
-  color: red;
+
+  color: #50b927ea;
+
   font-size: 10rem;
 }
 .carousel__span.arrow:hover {
@@ -320,7 +350,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .accordion__question {
     margin: 0 10px;
   }
