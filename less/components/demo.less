@@ -1,0 +1,60 @@
+.demo {  
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    .rows(2); // look further into this (might need to use margins instead)
+
+    .step {
+        &.hidden {
+            display: none;
+        }
+
+        &__h2 {
+            color: @font-secondary;
+            font-family: @accent-font;
+            letter-spacing: 2px;
+        }
+    }
+
+
+
+    .carousel {
+        max-width: 600px;
+        margin: 5rem auto 0;
+        position: relative;
+    
+        &__p {
+            color: @shark;
+        }
+    
+        &__img {
+            box-shadow: 1px 2px 3px rgba(25,25,25,.8);
+        }
+    
+        &__span {
+            &.arrow {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                top: 40%;
+    
+                color: @neon;
+    
+                font-size: 10rem;
+    
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+    
+            &#arrowLeft {
+                left: 25px;
+            }
+    
+            &#arrowRight {
+                right: 25px;
+            }
+        }
+    }
+}

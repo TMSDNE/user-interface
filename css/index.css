@@ -353,18 +353,35 @@ img {
 .button-basic--margin {
   margin-top: 50px;
 }
-.carousel {
+.demo {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.demo > * {
+  flex-basis: 2500%;
+}
+.demo .step.hidden {
+  display: none;
+}
+.demo .step__h2 {
+  color: #999;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 2px;
+}
+.demo .carousel {
   max-width: 600px;
   margin: 5rem auto 0;
   position: relative;
 }
-.carousel__p {
+.demo .carousel__p {
   color: #222;
 }
-.carousel__img {
+.demo .carousel__img {
   box-shadow: 1px 2px 3px rgba(25, 25, 25, 0.8);
 }
-.carousel__span.arrow {
+.demo .carousel__span.arrow {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -372,13 +389,13 @@ img {
   color: #50b927ea;
   font-size: 10rem;
 }
-.carousel__span.arrow:hover {
+.demo .carousel__span.arrow:hover {
   cursor: pointer;
 }
-.carousel__span#arrowLeft {
+.demo .carousel__span#arrowLeft {
   left: 25px;
 }
-.carousel__span#arrowRight {
+.demo .carousel__span#arrowRight {
   right: 25px;
 }
 .accordion {
