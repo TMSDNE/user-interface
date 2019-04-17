@@ -16,18 +16,25 @@
 
     &--features {
         display:flex;
-        flex-basis: 30%;
         margin-top: 40px;
+        justify-content:space-between;
+        flex-direction: row;
+
+        
+       
     }
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 20px 10px;
+    margin: 20px 0;
     border-bottom: 1px solid @font-secondary;
     flex-basis: 30%;
     margin-right: 30px;
+    box-shadow: 1px 2px 3px rgba(50,50,50,0.2);
+    
 
     @media @phone {
         flex-basis: 100%
@@ -71,6 +78,8 @@
         box-shadow: 1px 2px 3px rgba(50,50,50,0.2);
         padding: 2rem;
         margin: 0 2.25rem;
+
+        
 
         &__h1, &__h2, &__h3, &__h4, &__h5, &__h6, &__p {
             color: @shark;
