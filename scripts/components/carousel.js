@@ -1,4 +1,4 @@
-class Carousel {
+export default class Carousel {
     static of(element) {
         return new Carousel(element)
     }
