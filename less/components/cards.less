@@ -15,15 +15,42 @@
 
 
     &--features {
-        display:flex;
+        .flex-setup(row, space-between, stretch);
+        flex-wrap: nowrap;
         margin-top: 40px;
-        justify-content:space-between;
-        flex-direction: row;
 
-        
-       
+        @media @phone {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+            &.rows-1 {
+                & > .card--features {
+                    flex-basis: 100%;
+                }
+            }
+
+            &.rows-2 {
+                & > .card--features {
+                    flex-basis: 45%;
+                }
+            }
+
+            &.rows-3 {
+                & > .card--features {
+                    flex-basis: 30%;
+                }
+            }
+
+            &.rows-4 {
+                & > .card--features {
+                    flex-basis: 22%;
+                }
+            }
     }
 }
+
+
 
 .card {
     display: flex;
@@ -77,8 +104,10 @@
         align-items: center;
         box-shadow: 1px 2px 3px rgba(50,50,50,0.2);
         padding: 2rem;
-        margin: 0 2.25rem;
 
+        @media @phone {
+            margin-top: 4rem;
+        }
         
 
         &__h1, &__h2, &__h3, &__h4, &__h5, &__h6, &__p {
