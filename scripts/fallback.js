@@ -2,6 +2,7 @@
  * ----------Components-----------------
  */
 
+ console.log('HELLOOOOOOO')
 
 class Accordion {
     static of(element) {

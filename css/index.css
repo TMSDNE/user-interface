@@ -387,6 +387,6 @@ img {
 .accordion__question i:hover {
   color: #222;
 }
-.accordion .reveal {
-  height: 200;
+.accordion.reveal {
+  height: 200px;
 }
