@@ -379,6 +379,7 @@ img {
   color: #222;
 }
 .demo .carousel__img {
+  display: none;
   box-shadow: 1px 2px 3px rgba(25, 25, 25, 0.8);
 }
 .demo .carousel__span.arrow {
