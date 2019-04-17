@@ -169,6 +169,7 @@ img {
   }
 }
 .cards--features {
+  border: 1px solid red;
   display: flex;
   margin-top: 40px;
   justify-content: space-between;

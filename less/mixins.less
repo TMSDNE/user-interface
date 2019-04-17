@@ -5,17 +5,15 @@
     color: @font-secondary;
 }
 
-.flex-setup(@direction:row, @main-axis:flex-start, @cross-axis:stretch, @align-content:not true) {
+.flex-setup(@direction:row, @main-axis:flex-start, @cross-axis:stretch) {
     flex-direction: @direction;
     justify-content: @main-axis;
-    align-items: (@cross-axis) when (@align-content = not true);
-    align-content: (@cross-axis) when (@align-content = true);
 }
 
 
 .flex-rows(@rows:2, @gap:5%) {
     & > * {
-        flex-basis: ((100% / rows) - @gap ); 
+        flex-basis: (percentage(100 / rows) - @gap); 
         // the gap is for extra margin
     }
 }
