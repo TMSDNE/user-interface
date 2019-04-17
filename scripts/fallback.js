@@ -1,4 +1,29 @@
-export default class Carousel {
+/**
+ * ----------Components-----------------
+ */
+
+ console.log('HELLOOOOOOO')
+
+class Accordion {
+    static of(element) {
+        return new Accordion(element)
+    }
+
+    constructor(menu) {
+      this.menu = menu;
+      this.expand = this.menu.querySelector(".accordion__button");
+      this.expand.addEventListener("click", this.select.bind(this))
+    }
+  
+    select() {
+      this.menu.classList.toggle("reveal");
+      console.log(this)
+      console.log('come on, work already!')
+    }
+}
+  
+
+class Carousel {
     static of(element) {
         return new Carousel(element)
     }
@@ -47,5 +72,17 @@ export default class Carousel {
                 break
         }
     }
-
 }
+
+
+
+/**
+ * ----------Main--------------
+ */
+
+
+const accordions = document.querySelectorAll(".accordion")
+const carousels = document.querySelectorAll('.carousel')
+
+accordions.forEach(Accordion.of)
+carousels.forEach(Carousel.of)
