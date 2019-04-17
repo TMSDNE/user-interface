@@ -172,7 +172,6 @@ img {
   display: flex;
   margin-top: 40px;
   justify-content: space-between;
-  flex-direction: row;
 }
 .card {
   display: flex;
@@ -305,7 +304,9 @@ img {
 .button-basic:hover {
   transform: scale(1.1);
 }
-
+.button-basic--margin {
+  margin-top: 50px;
+}
 .carousel {
   max-width: 600px;
   margin: 5rem auto 0;
@@ -322,9 +323,7 @@ img {
   width: 50px;
   height: 50px;
   top: 40%;
-
   color: #50b927ea;
-
   font-size: 10rem;
 }
 .carousel__span.arrow:hover {

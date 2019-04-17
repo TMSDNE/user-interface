@@ -3,5 +3,19 @@
     text-decoration: none;
     font-size: 1.5rem;
     color: @font-secondary;
-   
+}
+
+.flex-setup(@direction:row, @main-axis:flex-start, @cross-axis:stretch, @align-content:not true) {
+    flex-direction: @direction;
+    justify-content: @main-axis;
+    align-items: (@cross-axis) when (@align-content = not true);
+    align-content: (@cross-axis) when (@align-content = true);
+}
+
+
+.flex-rows(@rows:2, @gap:5%) {
+    & > * {
+        flex-basis: ((100% / rows) - @gap ); 
+        // the gap is for extra margin
+    }
 }
