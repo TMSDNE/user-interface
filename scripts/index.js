@@ -4,11 +4,12 @@ class Accordion {
     this.menu = menu;
     this.expand = this.menu.querySelector(".accordion__button");
     this.expand.addEventListener("click", () => {
-      this.select();
+    this.select();
     });
   }
 
   select() {
+
     this.menu.classList.toggle("accordion__show");
   }
 }
