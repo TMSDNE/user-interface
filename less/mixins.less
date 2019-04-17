@@ -6,8 +6,10 @@
 }
 
 .flex-setup(@direction:row, @main-axis:flex-start, @cross-axis:stretch) {
+    display: flex;
     flex-direction: @direction;
     justify-content: @main-axis;
+    align-items: @cross-axis;
 }
 
 
