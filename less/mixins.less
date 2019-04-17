@@ -11,11 +11,3 @@
     justify-content: @main-axis;
     align-items: @cross-axis;
 }
-
-
-.flex-rows(@rows:2, @gap:5%) {
-    & > * {
-        flex-basis: (percentage(100 / rows) - @gap); 
-        // the gap is for extra margin
-    }
-}
