@@ -229,8 +229,11 @@ img {
   letter-spacing: 2px;
 }
 .card__img {
-  width: 60px;
-  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
 }
 .card--features {
   display: flex;
@@ -305,17 +308,27 @@ img {
 .footer {
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
   color: #FFFFFF;
   background-color: #222;
   margin-top: 50px;
   position: sticky;
+  padding: 1rem 2rem;
+  height: 100px;
 }
-.footer__div.contact {
+.footer__span {
+  margin: 0;
+  padding: 0;
   font-size: 1.5rem;
 }
-.footer__div.social-media {
-  padding-top: 3px;
+.footer__p {
+  padding: 0;
+  margin: 0;
+}
+.footer__i {
+  margin: 0;
   font-size: 4rem;
+  padding: 0;
 }
 .button-basic {
   font-size: 2rem;
