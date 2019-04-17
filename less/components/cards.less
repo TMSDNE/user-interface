@@ -4,6 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+   
 
     @media @tablet {
         justify-content: center;
@@ -61,7 +62,20 @@
     flex-basis: 30%;
     margin-right: 30px;
     box-shadow: 1px 2px 3px rgba(50,50,50,0.2);
+ 
     
+    &__content{
+  
+    }
+
+    &__social-media{
+       
+     
+    }
+    
+    &__h2{
+        margin-top: 20px;
+    }
 
     @media @phone {
         flex-basis: 100%
@@ -74,21 +88,23 @@
         &:hover {
             color: @font-secondary
         }
-        
     }
 
     &__div, &__span {
-        // width: 70px;
 
         &.text-container {
             font-size: 3rem;
             text-decoration: none;
-
+            
             &--small{
                 color: @font-secondary;
                 font-size: 2rem;
                 font-family: @accent-font;
                 letter-spacing: 2px
+            }
+
+            &--no-margin{
+                margin:0
             }
         }
     }
@@ -117,6 +133,7 @@
             color: @shark;
             margin: 0;
             padding: .5rem 1rem;
+         
         }
 
         &__i {
