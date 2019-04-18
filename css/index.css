@@ -171,9 +171,16 @@ img {
   }
 }
 .cards--background-color {
-  background-color: rgba(191, 231, 140, 0.424);
   height: 600px;
+  background-color: rgba(191, 231, 140, 0.424);
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}
+@media (max-width: 920px) {
+  .cards--background-color {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    height: 1400px;
+  }
 }
 .cards--features {
   display: flex;
@@ -267,7 +274,6 @@ img {
 .card__p {
   color: #222;
   margin: 0;
-  padding: 0.5rem 1rem;
 }
 .card--features {
   display: flex;
