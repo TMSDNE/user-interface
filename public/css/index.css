@@ -350,6 +350,9 @@ img {
 .hero__p.subtitle {
   color: #FFFFFF;
 }
+.hero__p.subtitle {
+  color: #FFFFFF;
+}
 .hero__a > *:hover {
   transform: scale(1.15);
   color: #222;
