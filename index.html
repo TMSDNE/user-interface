@@ -29,10 +29,10 @@
             <p class = main-header--logo>This Market Summary <br> Does Not Exist</p>
         </a>
         <nav class="main-header__nav">
+            <a href="index.html" class="main-header__a">Home</a>
           <a href="about.html" class="main-header__a">About</a>
           <a href="FAQ.html" class="main-header__a">FAQ</a>
-          <a href="index.html" class="main-header__a">Home</a>
-          <a href="#contact" class="main-header__a--strikethrough">Try It</a>
+          <a href="#contact" class="main-header__a">Try It</a>
         </nav>
       </header>
 
@@ -41,17 +41,18 @@
         <!-- features -->
         <section id="features" class="features">
           <div class="hero hero--alternative">
-            <div style="width: 80%; color:white; text-align: center; margin-top: 100px;">
+            <div class="hero__content">
               <h1>This Market Summary Does Not Exist</h1>
               <p>
-                Providing the best AI/NLP powered market commentary based on
-                financial asset price movements
+                Market commentary artificially generated from both sides of the aisle  
               </p>
             </div>
-            <button class="button-basic">Sign Up</button>
+            <button class="button-basic">Give it a shot</button>
           </div>
-        <section class="cards--features rows-3">
 
+          <!-- <h1 class="section-header">Take a look inside</h1> -->
+        <section class="cards--features rows-3">
+                
                 <div class="card--features">
                     <i class="fas fa-equals card--features__i"></i>
                     <h2 class="card--features__h2">Non-Bias</h2>
@@ -60,17 +61,18 @@
                 <div class="card--features">
                     <i class="far fa-clock card--features__i"></i>
                     <h2 class="card--features__h2">Historical</h2>
-                    <p class="card--features__p">Financial journals change daily making it hard to spot trends in the market.  We log our algorythms rusults  each day and allows you to quickly access the market trends over any given period of time. </p>
+                    <p class="card--features__p">Financial journals change daily making it hard to spot trends in the market.  We log our algorithms results  each day and allowing you to quickly access market trends over any given period of time. </p>
                 </div>
                 <div class="card--features">
                     <i class="fas fa-dollar-sign card--features__i"></i>
-                    <h2 class="card--features__h2">Cheap</h2>
+                    <h2 class="card--features--h2">Cheap</h2>
                     <p class="card--features__p">Access to bias financial journalism is expensive.  We bring you you a collection of data from some of the top subscription sites for financial journalism in a non-bias form for free.  There is no cost and no subscription.  </p>
                 </div>
             </section>
       </main>
 
-
+      <!-- <h1 class="section-header">How it works</h1> -->
+      
       <article class="demo carousel-accordion">
         <section class="steps">
             <div class="step" data-step="1">
@@ -94,12 +96,13 @@
 
         <!-- carousel -->
         <section class="carousel">
-            <span id="arrowLeft" class="carousel__span arrow"><</span>
+            <!-- <span id="arrowLeft" class="carousel__span arrow"><</span> -->
             <div class="carousel__div carousel__div--display">
-              <img src="/assests/images/stock.jpg" alt="featured service" class="carousel__img">
-              <img src="/assests/images/Ivana-Huckova.png" alt="featured service" class="carousel__img hidden">
-              <img src="/assests/images/Darien-Payton.png" alt="featured service" class="carousel__img">
+              <img src="/assests/images/collect.jpg" alt="featured service" class="carousel__img">
+              <img src="/assests/images/reorganize.jpg" alt="featured service" class="carousel__img hidden">
+              <img src="/assests/images/recieve.jpg" alt="featured service" class="carousel__img">
             </div> 
+            <span id="arrowLeft" class="carousel__span arrow"><</span> 
             <span id="arrowRight" class="carousel__span arrow">></span>
         </section>
       </article>
@@ -107,9 +110,13 @@
       
 
       <footer class="footer">
-        <p class="footer__p">soandso@gmail.com</p>
+        <a class="footer__a" href="#">
+          <p class="footer__p">info@tmsdne.com</p>
+        </a>
         <span class="footer__span">TMSDNE&copy; 2019</span> 
-        <i class="fab fa-github-square footer__i"></i>
+        <a class="footer__a" href="https://github.com/TMSDNE">
+          <i class="fab fa-github-square footer__i"></i>
+        </a>
       </footer>
     </section>
     <!-- <script type="module" src="/scripts/components/accordion.js"></script> -->

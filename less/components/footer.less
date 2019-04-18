@@ -1,29 +1,49 @@
 .footer {
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+   
     color: @white;
     background-color: @shark;
     margin-top: 50px;
     position: sticky;
     padding: 1rem 2rem;
-    height: 100px;
+    height: 80px;
 
     &__span {
-        margin: 0;
+        margin-top: 20px;
+        margin-right:60px;
         padding: 0;
         font-size: 1.5rem;
+
+        @media @phone{
+            margin-right: 10px;
+        }
+        
     }
+
+    &__a{
+        text-decoration: none;
+    }
+    
     
     &__p {
         padding: 0;
-        margin: 0;
+        text-decoration: none;
+        color: @white;
+        cursor: pointer;
     }
 
     &__i {
-        margin: 0;
+        margin-right: 45px;
+        margin-top: 7px;
         font-size: 4rem;
         padding: 0;
+        color: @white;
+    
+
+            &:hover{
+                color: @neon;
+            }
     }
     
 }

@@ -10,9 +10,26 @@
     height: 400px;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 10% 100%);
 
+    &__content{
+        width: 80%; 
+        color:white; 
+        text-align: center; 
+        margin-top: 100px;
+
+        @media @tablet{
+            margin-top: 20px;
+        }
+
+        @media @phone{
+            margin-top:10px;
+        }
+    }
+
      p{
          font-size: 2rem;
          font-weight: 700;
+         text-align: center
+
      }
 
     
@@ -23,13 +40,25 @@
             &.tag-line {
                 letter-spacing: 2px;
                 margin-top:8rem;
+                margin-bottom:4rem;
                 color: @white;
+                text-align: center;
+                
             }
         }
 
         &__p {
+            color: @white;
+            margin: 0 100px;
+
+                @media @phone{
+                    margin: 0 50px
+                }
             &.subtitle {
                 color: @white;
+               
+                
+          
                 
             }
         }

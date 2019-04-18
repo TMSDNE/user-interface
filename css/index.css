@@ -161,10 +161,11 @@ img {
 }
 @media (max-width: 920px) {
   .cards {
-    justify-content: center;
+    justify-content: space-around;
+    margin: 0;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 750px) {
   .cards {
     flex-direction: column;
   }
@@ -177,7 +178,7 @@ img {
   flex-wrap: nowrap;
   margin-top: 40px;
 }
-@media (max-width: 520px) {
+@media (max-width: 920px) {
   .cards--features {
     flex-direction: column;
     justify-content: space-between;
@@ -202,8 +203,17 @@ img {
   margin: 20px 0;
   border-bottom: 1px solid #999;
   flex-basis: 30%;
-  margin-right: 30px;
+  margin: 15px;
   box-shadow: 1px 2px 3px rgba(50, 50, 50, 0.2);
+  justify-content: space-evenly;
+}
+.card__content {
+  height: 350px;
+}
+@media (max-width: 750px) {
+  .card__content {
+    height: 230px;
+  }
 }
 .card__h2 {
   margin-top: 20px;
@@ -218,7 +228,7 @@ img {
   margin-left: 10px;
 }
 .card__i:hover {
-  color: #999;
+  color: #50b927ea;
 }
 .card__div.text-container,
 .card__span.text-container {
@@ -267,7 +277,7 @@ img {
   padding: 0.5rem 1rem;
 }
 .card--features__i {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .hero {
   display: flex;
@@ -278,14 +288,42 @@ img {
   height: 400px;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 10% 100%);
 }
+.hero__content {
+  width: 80%;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+@media (max-width: 920px) {
+  .hero__content {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .hero__content {
+    margin-top: 10px;
+  }
+}
 .hero p {
   font-size: 2rem;
   font-weight: 700;
+  text-align: center;
 }
 .hero__h1.tag-line {
   letter-spacing: 2px;
   margin-top: 8rem;
+  margin-bottom: 4rem;
   color: #FFFFFF;
+  text-align: center;
+}
+.hero__p {
+  color: #FFFFFF;
+  margin: 0 100px;
+}
+@media (max-width: 520px) {
+  .hero__p {
+    margin: 0 50px;
+  }
 }
 .hero__p.subtitle {
   color: #FFFFFF;
@@ -316,27 +354,42 @@ img {
 .footer {
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
   color: #FFFFFF;
   background-color: #222;
   margin-top: 50px;
   position: sticky;
   padding: 1rem 2rem;
-  height: 100px;
+  height: 80px;
 }
 .footer__span {
-  margin: 0;
+  margin-top: 20px;
+  margin-right: 60px;
   padding: 0;
   font-size: 1.5rem;
 }
+@media (max-width: 520px) {
+  .footer__span {
+    margin-right: 10px;
+  }
+}
+.footer__a {
+  text-decoration: none;
+}
 .footer__p {
   padding: 0;
-  margin: 0;
+  text-decoration: none;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 .footer__i {
-  margin: 0;
+  margin-right: 45px;
+  margin-top: 7px;
   font-size: 4rem;
   padding: 0;
+  color: #FFFFFF;
+}
+.footer__i:hover {
+  color: #50b927ea;
 }
 .button-basic {
   font-size: 2rem;
@@ -362,6 +415,20 @@ img {
 .demo > * {
   flex-basis: 2500%;
 }
+@media (max-width: 920px) {
+  .demo {
+    flex-direction: column;
+  }
+}
+.demo .step {
+  margin: 0 10rem;
+  width: 400px;
+}
+@media (max-width: 920px) {
+  .demo .step {
+    margin: 0 2rem;
+  }
+}
 .demo .step.hidden {
   display: none;
 }
@@ -374,6 +441,7 @@ img {
   max-width: 600px;
   margin: 5rem auto 0;
   position: relative;
+  height: 400px;
 }
 .demo .carousel__p {
   color: #222;
@@ -381,23 +449,39 @@ img {
 .demo .carousel__img {
   display: none;
   box-shadow: 1px 2px 3px rgba(25, 25, 25, 0.8);
+  width: 100%;
+  height: 100%;
+  transition: fade 0.2s;
+  animation: fade 0.5s;
 }
 .demo .carousel__span.arrow {
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 40%;
-  color: #50b927ea;
-  font-size: 10rem;
+  top: 22%;
+  color: hsla(0, 0%, 100%, 0.827);
+  font-size: 7rem;
 }
 .demo .carousel__span.arrow:hover {
   cursor: pointer;
 }
 .demo .carousel__span#arrowLeft {
-  left: 25px;
+  left: 10px;
 }
 .demo .carousel__span#arrowRight {
-  right: 25px;
+  right: 10px;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.section-header {
+  text-align: center;
+  margin-top: 50px;
 }
 .accordion {
   color: black;
@@ -406,6 +490,7 @@ img {
   border-bottom: 1px solid #999;
   transition: all 0.2s;
   margin-bottom: 10px;
+  margin-top: 50px;
 }
 .accordion__question {
   height: 100px;
@@ -428,4 +513,9 @@ img {
 }
 .accordion.reveal {
   height: 200px;
+}
+@media (max-width: 920px) {
+  .accordion.reveal {
+    height: 250px;
+  }
 }
