@@ -8,26 +8,46 @@ class CarouselAccordion {
     }
 
     set activeDisplay(newDisplay) {
+        // this._activeDisplay.style.display = 'none'
+        // this._activeDisplay = newDisplay
+        // this._activeDisplay.style.display = 'block'
+        
         // swap out images
-        this._activeDisplay.style.display = 'none'
-        this._activeDisplay = newDisplay
-        this._activeDisplay.style.display = 'block'
+        swap(this._activeDisplay, newDisplay)   // 1
+
+        // this.steps
+        //     .find(x => parseInt(x.dataset.step) === this.activeIndex + 1)
+
+        const hideCurrentStep = showNextStep = pipe(
+            find(
+                function doesStepMatchIndex(x, y) {
+                    return parseInt(x.dataset.step) === (this.activeIndex + 1)
+                }
+            ),
+            toggleClass('hidden')
+        )
 
         // hide the current step
-        this.steps
-            .find(x => parseInt(x.dataset.step) === this.activeIndex + 1)
-            .classList.toggle('hidden')
+        hideCurrentStep(this.steps)     // 2
 
         // update the active index
-        this.activeIndex = 
+        const updateActiveIndex = () => {
+            this.activeIndex = 
             this.images.findIndex(
                 img => img.src === newDisplay.src
             )
+        }
+
+        updateActiveIndex()     // 3
+        
+        // this.steps
+        //     .find(x => parseInt(x.dataset.step) === this.activeIndex + 1)
+        //     .classList.toggle('hidden')
         
         // show the next step (based on active image)
-        this.steps
-            .find(x => parseInt(x.dataset.step) === this.activeIndex + 1)
-            .classList.toggle('hidden')
+        showNextStep(this.steps)        // 4
+
+        
     }
 
     constructor(element) {
@@ -64,5 +84,39 @@ class CarouselAccordion {
                         : this.images[this.activeIndex + 1]
                 break
         }
+    }
+}
+
+
+/**
+ * -----------Helpers----------------
+ */
+
+ function swap(old, next) {
+    // swap out images
+    old.style.display = 'none'
+    this._activeDisplay = next
+    old.style.display = 'block'
+
+    return [old, next]
+ }
+
+ function find(fn) {
+    return function(xs) {
+        return xs.find(fn)
+    }
+ }
+
+
+function toggleClass(el) {
+    return function(...classes) {
+        classes.forEach(c => el.classList.toggle(c))
+        return [el, el.classList]
+    }
+}
+ 
+function pipe(...fns) { 
+    return function(i) {
+        return fns.reduce((v, f) => f(v), i)
     }
 }
