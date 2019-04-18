@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build:watch": "less-watch-compiler less css index.less"
+    "build:watch": "less-watch-compiler ./public/less ./public/css index.less"
   },
   "keywords": [],
   "author": "",
