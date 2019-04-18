@@ -5,6 +5,7 @@
     border-bottom: 1px solid @font-secondary;
     transition: all .2s;
     margin-bottom: 10px;
+    margin-top: 50px;
 
 
     &__question {
@@ -31,5 +32,9 @@
     
     &.reveal {
         height: 200px;
+
+        @media @tablet{
+            height:250px;
+        }
     }
 }

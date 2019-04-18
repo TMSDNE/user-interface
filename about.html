@@ -23,17 +23,17 @@
             </a>
             
             <nav class="main-header__nav">
+                <a href="index.html" class="main-header__a">Home</a>
                 <a href="about.html" class="main-header__a">About</a>
                 <a href="FAQ.html" class="main-header__a">FAQ</a>
-                <a href="index.html" class="main-header__a">Home</a>
-                <a href="about.html#contact" class="main-header__a--strikethrough">Try It</a>
+                <a href="about.html#contact" class="main-header__a">Try It</a>
             </nav>
         </header>
 
         <main class="main">
             <div class="hero hero--alternative">
                 <h1 class="hero__h1 tag-line">Meet the Team</h1>
-                <p style="color:white">Say hello to the team of experts that helped to develop this product (which does not exist).</p>
+                <p class="hero__p">Say hello to the team of experts that helped to develop this product (which does not exist)</p>
             </div>
 
             <div class= "cards">
@@ -78,11 +78,14 @@
                     </div>
 
                     <div class="card__div text-container">
-                        <h2 class="card__h2">Ivana Huckova</h2><span class="card__span text-container--small">Backend Architect</span>
-                        <p>Worked with amazing Lukas on a backend part of the project. We have worked on web api which connects the web app and the private API delivering insights from our data science team.</p>
-                        <a href="https://github.com/ivanahuckova" class="card__a"><i class="fab fa-github card__i"></i></a>
-                        <a href="https://twitter.com/ivanahuckova" class="card__a"><i class="fab fa-twitter card__i"></i></a>
-                    </div>
+                        <div class="card__content"> 
+                            <h2 class="card__h2">Ivana Huckova</h2><span class="card__span text-container--small">Backend Architect</span>
+                            <p>Worked with amazing Lukas on a backend part of the project. We have worked on web api which connects the web app and the private API delivering insights from our data science team.</p>
+                        </div>
+                        <div class="card__social-media">
+                            <a href="https://github.com/ivanahuckova" class="card__a"><i class="fab fa-github card__i"></i></a>
+                            <a href="https://twitter.com/ivanahuckova" class="card__a"><i class="fab fa-twitter card__i"></i></a>
+                        </div>  
                 </article>  
 
                 <article class="card">
@@ -91,23 +94,31 @@
                     </div>
 
                     <div class="card__div text-container">
-                        <h2 class="card__h2">Lukas Siatka </h2><span class="card__span text-container--small">Backend Architect</span>
-                        <p>Worked with Ivana on a backend, implemented a web API being a bridge between the web app and the private API delivering insights with Machine Learning models. Implemented caching to reduce the number of private API calls.</p>
-                        <a href="http://github.com/estrax" class="card__a"><i class="fab fa-github card__i"></i></a>
-                        <a href="http://twitter.com/estraxofficial" class="card__a"><i class="fab fa-twitter card__i"></i></a>
+                        <div class="card__content"> 
+                            <h2 class="card__h2">Lukas Siatka </h2><span class="card__span text-container--small">Backend Architect</span>
+                            <p>Worked with Ivana on a backend, implemented a web API being a bridge between the web app and the private API delivering insights with Machine Learning models. Implemented caching to reduce the number of private API calls.</p>
+                        </div>
+                        <div class="card__social-media">
+                            <a href="http://github.com/estrax" class="card__a"><i class="fab fa-github card__i"></i></a>
+                            <a href="http://twitter.com/estraxofficial" class="card__a"><i class="fab fa-twitter card__i"></i></a>
+                        </div>  
                     </div>
                 </article>  
 
                 <article class="card">
                     <div class="card__div">
-                        <img src="/assests/images/brandon-Pampch.jpeg" alt="employee image" class="card__img">
+                        <img src="/assests/images/Brandon-Pampuch.png" alt="employee image" class="card__img">
                     </div>
 
                     <div class="card__div text-container">
-                        <h2 class="card__h2">Brandon Pampuch</h2><span class="card__span text-container--small">UI developer</span>
-                        <p>Worked on a team of UI and front-end developers to create a marketing site that showcases the features of our product and allows for enhanced SEO performance. </p>
-                        <a href="https://github.com/Brandon-Pampuch" class="card__a"><i class="fab fa-github card__i"></i></a>
-                        <a href="https://twitter.com/PabloShampoo" class="card__a"><i class="fab fa-twitter card__i"></i></a>
+                        <div class="card__content">
+                            <h2 class="card__h2">Brandon Pampuch</h2><span class="card__span text-container--small">UI developer</span>
+                            <p>Worked on a team of UI and front-end developers to create a marketing site that showcases the features of our product and allows for enhanced SEO performance. </p>
+                        </div>
+                        <div class="card__social-media">
+                            <a href="https://github.com/Brandon-Pampuch" class="card__a"><i class="fab fa-github card__i"></i></a>
+                            <a href="https://twitter.com/PabloShampoo" class="card__a"><i class="fab fa-twitter card__i"></i></a>
+                        </div>
                     </div>
                 </article>  
 
@@ -117,11 +128,15 @@
                     </div>
 
                     <div class="card__div text-container">
-                        <h2 class="card__h2">Moses Samuel</h2><span class="card__span text-container--small">UI developer</span>
-                        <p>Contributed primarily to the user experience and interactivity of the marketing site. Also worked closely with the rest of the frontend team to build the stylesheets that would establish the design and branding of the product.</p>
-                        <a href="https://github.com/MosesSupposes" class="card__a"><i class="fab fa-github card__i"></i></a>
-                        <a href="https://www.linkedin.com/in/moses-samuel/" class="card__a"><i class="fab fa-linkedin card__i"></i></a>
-                        <a href="https://twitter.com/_MosesSupposes_" class="card__a"><i class="fab fa-twitter card__i"></i></a>
+                        <div class="card__content">
+                            <h2 class="card__h2">Moses Samuel</h2><span class="card__span text-container--small">UI developer</span>
+                            <p>Contributed primarily to the user experience and interactivity of the marketing site. Also worked closely with the rest of the frontend team to build the stylesheets that would establish the design and branding of the product.</p>
+                        </div>
+                        <div class="card__social-media">
+                            <a href="https://github.com/MosesSupposes" class="card__a"><i class="fab fa-github card__i"></i></a>
+                            <a href="https://www.linkedin.com/in/moses-samuel/" class="card__a"><i class="fab fa-linkedin card__i"></i></a>
+                            <a href="https://twitter.com/_MosesSupposes_" class="card__a"><i class="fab fa-twitter card__i"></i></a>
+                        </div>
                     </div>
                 </article>  
             </div>  
@@ -129,14 +144,14 @@
 
 
         <footer class="footer">
-            <div class="footer__div contact">
-                <p class="footer__p">soandso@gmail.com</p>
-            </div>
-            <p class="footer__p">TMSDNE&copy; 2019</p> 
-            <div class ="footer__div social-media">
-                <i class="fab fa-github-square"></i>
-            </div>
-        </footer>
+                <a class="footer__a" href="#">
+                  <p class="footer__p">info@tmsdne.com</p>
+                </a>
+                <span class="footer__span">TMSDNE&copy; 2019</span> 
+                <a class="footer__a" href="https://github.com/TMSDNE">
+                  <i class="fab fa-github-square footer__i"></i>
+                </a>
+              </footer>
     </div>
 
     <!-- <script type="module" src="/scripts/components/accordion.js"></script> -->
